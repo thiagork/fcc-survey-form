@@ -2,7 +2,7 @@ Demo:
 https://fcc-survey-form.netlify.com/
 
 
-This is a project by freeCodeCamp (freecodecamp.org) to build a Generic Survey Form.
+This is a project for freeCodeCamp (freecodecamp.org) to build a Generic Survey Form.
 
 For this project we are supposed to use plain CSS.
 
