@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Survey Form project for freeCodeCamp</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form project for freeCodeCamp by Thiago K.</h1>
+        <p id="description">This is my second project for freeCodeCamp. For this project I must build a webpage containing a generic survey using plain CSS.</p>
+    </header>
+    <div class="main-content">
+        <form action="/url-to-send-form" id="survey-form">
+            <div class="survey-left-column">
+                <label for="name" id="name-label">Name: </label>
+            </div>
+            <div class="survey-right-column">
+                <input type="text" placeholder="Name" id="name" required>
+            </div>
+            <div class="survey-left-column">
+                <label id="email-label">Email:</label>
+            </div>
+            <div class="survey-right-column">
+                <input type="email" placeholder="Email" id="email" required>
+            </div>
+            <div class="survey-left-column">
+                <label id="number-label">Age:</label>
+            </div>
+            <div class="survey-right-column">
+                <input type="number" placeholder="Number" id="number" min="1" max="150">
+            </div>
+            <div class="survey-left-column">
+                <label for="dropdown" id="dropdown-label">Please select if you prefer front-end or back-end:</label>
+            </div>
+            <div class="survey-right-column">
+                <select id="dropdown">
+                    <option disabled value>Select an option</option>
+                    <option value="value-1">Front-end</option>
+                    <option value="value-2">Back-end</option>
+                </select>
+            </div>
+            <div class="survey-left-column">
+                <label for="favorite-framework">What's your favorite Javascript framework from the 3 bellow?</label>
+            </div>
+            <div class="survey-right-column">
+                <ul>
+                    <li><input type="radio" name="radio-form" value="Angular" class="favorite-framework"> Angular<br></li>
+                    <li><input type="radio" name="radio-form" value="React" class="favorite-framework"> React<br></li>
+                    <li><input type="radio" name="radio-form" value="Vue.js" class="favorite-framework"> Vue.JS<br></li>
+                </ul>
+            </div>
+            <div class="survey-left-column">
+                <label for="familiar-languages">Which Back-end languages are you familiar with?</label>
+            </div>
+            <div class="survey-right-column">
+                <ul id="familiar-languages">
+                    <li class="checkbox">
+                        <input type="checkbox" name="back-end-languages" value="javascript">Javascript<br>
+                    </li>
+                    <li class="checkbox">
+                        <input type="checkbox" name="back-end-languages" value="php">PHP<br>
+                    </li>
+                    <li class="checkbox">
+                        <input type="checkbox" name="back-end-languages" value="python">Python<br>
+                    </li>
+                    <li class="checkbox">
+                        <input type="checkbox" name="back-end-languages" value="ruby">Ruby<br>
+                    </li>
+                    <li class="checkbox">
+                        <input type="checkbox" name="back-end-languages" value="java">Java<br>
+                    </li>
+                    <li class="checkbox">
+                        <input type="checkbox" name="back-end-languages" value="csharp">C#<br>
+                    </li>
+                    <li class="checkbox">
+                        <input type="checkbox" name="back-end-languages" value="other">Other<br>
+                    </li>
+                </ul>
+            </div>
+            <div class="text-field">
+                <div>
+                    <label for="comments">Any other comment or suggestion?</label>
+                </div>
+                <div>
+                    <textarea id="comments" cols="60" rows="10"></textarea>
+                </div>
+            </div>
+            <button id="submit" type="submit">Submit survey</button>
+        </form>
+    </div>
+    <footer>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
